@@ -1,0 +1,17 @@
+form {
+  display: flex;
+  flex-direction: column;
+
+  input, button {
+    flex: 1 auto;
+    min-height: 30px;
+    margin-top: 14px;
+    text-indent: 14px;
+  }
+
+  button {
+    font-size: 18px;
+    min-height: 60px
+  }
+}
+
