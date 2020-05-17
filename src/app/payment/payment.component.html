@@ -2,7 +2,10 @@
 
 <form [formGroup]="form">
   <input type="text" formControlName="cardNumber" placeholder="card number">
+  <input type="text" formControlName="amount" placeholder="amount to pay">
   <input type="text" formControlName="ownerName" placeholder="your name">
 
-  <button type="submit">Save</button>
+  <button type="submit" (click)="save()">Save</button>
 </form>
+
+<p *ngIf="result?.data['error'] != null" class="error">{{CustomError[result.data['error']]}}</p>
